@@ -25,6 +25,7 @@ package langchaingo
 import (
 	"context"
 	"errors"
+	"fmt"
 	"io"
 
 	"github.com/plexusone/omnillm-core/provider"
@@ -253,6 +254,8 @@ func convertMessagesToOmnillm(msgs []llms.MessageContent) ([]provider.Message, e
 				return nil, errors.New("omnillm-langchaingo: ImageURLContent not yet supported")
 			case llms.BinaryContent:
 				return nil, errors.New("omnillm-langchaingo: BinaryContent not yet supported")
+			default:
+				return nil, fmt.Errorf("omnillm-langchaingo: unsupported content type %T", p)
 			}
 		}
 
