@@ -194,7 +194,7 @@ func applyCallOptions(req *provider.ChatCompletionRequest, opts *llms.CallOption
 	}
 
 	if opts.Seed > 0 {
-		seed := int(opts.Seed)
+		seed := opts.Seed
 		req.Seed = &seed
 	}
 
