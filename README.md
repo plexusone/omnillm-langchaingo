@@ -1,4 +1,4 @@
-# omnillm-langchaingo
+# LangChainGo adapter for OmniLLM
 
 [![Go CI][go-ci-svg]][go-ci-url]
 [![Go Lint][go-lint-svg]][go-lint-url]
@@ -25,7 +25,7 @@
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
  [license-url]: https://github.com/plexusone/omnillm-langchaingo/blob/master/LICENSE
 
-LangChainGo adapter for [omnillm](https://github.com/plexusone/omnillm).
+[LangChainGo](https://github.com/tmc/langchaingo/) adapter for [omnillm](https://github.com/plexusone/omnillm).
 
 This package implements the `github.com/tmc/langchaingo/llms.Model` interface using omnillm as the LLM backend, allowing you to use omnillm's unified provider abstraction with LangChainGo's chains, agents, and RAG pipelines.
 
