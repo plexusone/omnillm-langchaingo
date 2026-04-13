@@ -168,18 +168,18 @@ response, err := llm.GenerateContent(ctx,
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  LangChainGo (chains, agents, RAG, memory, tools)          │
-├─────────────────────────────────────────────────────────────┤
-│  omnillm-langchaingo (this package)                        │
-│  implements llms.Model interface                           │
-├─────────────────────────────────────────────────────────────┤
-│  omnillm / omnillm-core                                    │
-│  unified LLM provider abstraction                          │
-│  ┌─────────┬─────────┬─────────┬─────────┬─────────┐      │
-│  │ OpenAI  │Anthropic│ Gemini  │ Bedrock │ Ollama  │      │
-│  └─────────┴─────────┴─────────┴─────────┴─────────┘      │
-└─────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────┐
+│  LangChainGo (chains, agents, RAG, memory, tools)     │
+├───────────────────────────────────────────────────────┤
+│  omnillm-langchaingo (this package)                   │
+│  implements llms.Model interface                      │
+├───────────────────────────────────────────────────────┤
+│  omnillm / omnillm-core                               │
+│  unified LLM provider abstraction                     │
+│  ┌─────────┬─────────┬─────────┬─────────┬─────────┐  │
+│  │ OpenAI  │Anthropic│ Gemini  │ Bedrock │ Ollama  │  │
+│  └─────────┴─────────┴─────────┴─────────┴─────────┘  │
+└───────────────────────────────────────────────────────┘
 ```
 
 ## License
