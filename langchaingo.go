@@ -249,6 +249,10 @@ func convertMessagesToOmnillm(msgs []llms.MessageContent) ([]provider.Message, e
 				omniMsg.Content = p.Content
 				toolCallID := p.ToolCallID
 				omniMsg.ToolCallID = &toolCallID
+			case llms.ImageURLContent:
+				return nil, errors.New("omnillm-langchaingo: ImageURLContent not yet supported")
+			case llms.BinaryContent:
+				return nil, errors.New("omnillm-langchaingo: BinaryContent not yet supported")
 			}
 		}
 
