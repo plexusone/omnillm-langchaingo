@@ -1,0 +1,36 @@
+{
+  "irVersion": "1.0",
+  "project": "omnillm-langchaingo",
+  "repository": "https://github.com/plexusone/omnillm-langchaingo",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["grokify", "johncwang@gmail.com"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-04-13",
+      "highlights": [
+        { "description": "LangChainGo adapter for omnillm - use any omnillm provider with LangChainGo chains, agents, and RAG pipelines" }
+      ],
+      "added": [
+        { "description": "`New()` function to create LangChainGo `llms.Model` from omnillm provider", "commit": "ae3886d" },
+        { "description": "Full `llms.Model` interface implementation with `GenerateContent()` and `Call()` methods", "commit": "ae3886d" },
+        { "description": "Streaming support with `llms.WithStreamingFunc()` callback option", "commit": "ae3886d" },
+        { "description": "Tool/function calling support with automatic conversion between LangChainGo and omnillm formats", "commit": "ae3886d" },
+        { "description": "All LangChainGo call options: temperature, max tokens, top-p, stop words, seed", "commit": "ae3886d" },
+        { "description": "Token usage tracking in `GenerationInfo` response metadata", "commit": "ae3886d" },
+        { "description": "Message role mapping between LangChainGo and omnillm (system, user, assistant, tool)", "commit": "ae3886d" }
+      ],
+      "fixed": [
+        { "description": "Add error handling for unsupported content types (ImageURLContent, BinaryContent)", "commit": "e7f0f35" },
+        { "description": "Add default case in message conversion switch for unknown content types", "commit": "e7f0f35" }
+      ],
+      "tests": [
+        { "description": "Unit tests for `New()`, `GenerateContent()`, `Call()`, role mapping, and tool conversion", "commit": "becf925" }
+      ],
+      "documentation": [
+        { "description": "README with installation, usage examples (omnillm, omnillm-core, chains, tools, streaming), and architecture diagram", "commit": "c5d7ee8" }
+      ]
+    }
+  ]
+}
