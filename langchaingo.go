@@ -8,7 +8,7 @@
 //
 //	import (
 //	    "github.com/plexusone/omnillm"
-//	    "github.com/plexusone/omnillm-langchaingo"
+//	    "github.com/plexusone/langchaingo-omnillm"
 //	)
 //
 //	client := omnillm.NewClient(omnillm.ClientConfig{
@@ -251,11 +251,11 @@ func convertMessagesToOmnillm(msgs []llms.MessageContent) ([]provider.Message, e
 				toolCallID := p.ToolCallID
 				omniMsg.ToolCallID = &toolCallID
 			case llms.ImageURLContent:
-				return nil, errors.New("omnillm-langchaingo: ImageURLContent not yet supported")
+				return nil, errors.New("langchaingo-omnillm: ImageURLContent not yet supported")
 			case llms.BinaryContent:
-				return nil, errors.New("omnillm-langchaingo: BinaryContent not yet supported")
+				return nil, errors.New("langchaingo-omnillm: BinaryContent not yet supported")
 			default:
-				return nil, fmt.Errorf("omnillm-langchaingo: unsupported content type %T", p)
+				return nil, fmt.Errorf("langchaingo-omnillm: unsupported content type %T", p)
 			}
 		}
 

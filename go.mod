@@ -1,4 +1,4 @@
-module github.com/plexusone/omnillm-langchaingo
+module github.com/plexusone/langchaingo-omnillm
 
 go 1.26.0
 
