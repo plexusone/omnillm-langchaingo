@@ -8,22 +8,22 @@
 [![Visualization][viz-svg]][viz-url]
 [![License][license-svg]][license-url]
 
- [go-ci-svg]: https://github.com/plexusone/omnillm-langchaingo/actions/workflows/go-ci.yaml/badge.svg?branch=main
- [go-ci-url]: https://github.com/plexusone/omnillm-langchaingo/actions/workflows/go-ci.yaml
- [go-lint-svg]: https://github.com/plexusone/omnillm-langchaingo/actions/workflows/go-lint.yaml/badge.svg?branch=main
- [go-lint-url]: https://github.com/plexusone/omnillm-langchaingo/actions/workflows/go-lint.yaml
- [go-sast-svg]: https://github.com/plexusone/omnillm-langchaingo/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
- [go-sast-url]: https://github.com/plexusone/omnillm-langchaingo/actions/workflows/go-sast-codeql.yaml
- [goreport-svg]: https://goreportcard.com/badge/github.com/plexusone/omnillm-langchaingo
- [goreport-url]: https://goreportcard.com/report/github.com/plexusone/omnillm-langchaingo
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/omnillm-langchaingo
- [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/omnillm-langchaingo
+ [go-ci-svg]: https://github.com/plexusone/langchaingo-omnillm/actions/workflows/go-ci.yaml/badge.svg?branch=main
+ [go-ci-url]: https://github.com/plexusone/langchaingo-omnillm/actions/workflows/go-ci.yaml
+ [go-lint-svg]: https://github.com/plexusone/langchaingo-omnillm/actions/workflows/go-lint.yaml/badge.svg?branch=main
+ [go-lint-url]: https://github.com/plexusone/langchaingo-omnillm/actions/workflows/go-lint.yaml
+ [go-sast-svg]: https://github.com/plexusone/langchaingo-omnillm/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
+ [go-sast-url]: https://github.com/plexusone/langchaingo-omnillm/actions/workflows/go-sast-codeql.yaml
+ [goreport-svg]: https://goreportcard.com/badge/github.com/plexusone/langchaingo-omnillm
+ [goreport-url]: https://goreportcard.com/report/github.com/plexusone/langchaingo-omnillm
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/langchaingo-omnillm
+ [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/langchaingo-omnillm
  [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
- [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fomnillm-langchaingo
- [loc-svg]: https://tokei.rs/b1/github/plexusone/omnillm-langchaingo
- [repo-url]: https://github.com/plexusone/omnillm-langchaingo
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Flangchaingo-omnillm
+ [loc-svg]: https://tokei.rs/b1/github/plexusone/langchaingo-omnillm
+ [repo-url]: https://github.com/plexusone/langchaingo-omnillm
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/plexusone/omnillm-langchaingo/blob/master/LICENSE
+ [license-url]: https://github.com/plexusone/langchaingo-omnillm/blob/master/LICENSE
 
 [LangChainGo](https://github.com/tmc/langchaingo/) adapter for [omnillm](https://github.com/plexusone/omnillm).
 
@@ -32,7 +32,7 @@ This package implements the `github.com/tmc/langchaingo/llms.Model` interface us
 ## Installation
 
 ```bash
-go get github.com/plexusone/omnillm-langchaingo
+go get github.com/plexusone/langchaingo-omnillm
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ import (
     "os"
 
     "github.com/plexusone/omnillm"
-    "github.com/plexusone/omnillm-langchaingo"
+    "github.com/plexusone/langchaingo-omnillm"
     "github.com/tmc/langchaingo/llms"
 )
 
@@ -78,7 +78,7 @@ func main() {
 import (
     omnillm "github.com/plexusone/omnillm-core"
     _ "github.com/plexusone/omnillm-anthropic"  // Import only the provider you need
-    "github.com/plexusone/omnillm-langchaingo"
+    "github.com/plexusone/langchaingo-omnillm"
 )
 
 func main() {
@@ -171,7 +171,7 @@ response, err := llm.GenerateContent(ctx,
 ┌───────────────────────────────────────────────────────┐
 │  LangChainGo (chains, agents, RAG, memory, tools)     │
 ├───────────────────────────────────────────────────────┤
-│  omnillm-langchaingo (this package)                   │
+│  langchaingo-omnillm (this package)                   │
 │  implements llms.Model interface                      │
 ├───────────────────────────────────────────────────────┤
 │  omnillm / omnillm-core                               │
