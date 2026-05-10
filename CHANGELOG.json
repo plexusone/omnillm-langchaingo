@@ -1,11 +1,21 @@
 {
   "irVersion": "1.0",
-  "project": "omnillm-langchaingo",
-  "repository": "https://github.com/plexusone/omnillm-langchaingo",
+  "project": "langchaingo-omnillm",
+  "repository": "https://github.com/plexusone/langchaingo-omnillm",
   "versioning": "semver",
   "commitConvention": "conventional",
   "maintainers": ["grokify", "johncwang@gmail.com"],
   "releases": [
+    {
+      "version": "v0.2.0",
+      "date": "2026-05-10",
+      "highlights": [
+        { "description": "Module renamed to `langchaingo-omnillm` to follow LangChain ecosystem naming convention (`langchain-<provider>`)" }
+      ],
+      "changed": [
+        { "description": "**BREAKING:** Module path renamed from `github.com/plexusone/omnillm-langchaingo` to `github.com/plexusone/langchaingo-omnillm` to align with LangChain's `langchain-<provider>` naming convention" }
+      ]
+    },
     {
       "version": "v0.1.0",
       "date": "2026-04-13",
