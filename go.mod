@@ -3,7 +3,7 @@ module github.com/plexusone/langchaingo-omnillm
 go 1.26.0
 
 require (
-	github.com/plexusone/omnillm-core v0.15.0
+	github.com/plexusone/omnillm-core v0.16.0
 	github.com/tmc/langchaingo v0.1.14
 )
 
